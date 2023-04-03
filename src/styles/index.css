@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  background-color: rgb(3, 26, 26);
+}
+
+* {
+  color: white;
+}
+
+.footerContainer {
+  text-align: center;
+}
+
+.headerContainer {
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
