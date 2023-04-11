@@ -1,13 +1,25 @@
 body {
-  margin: 0;
-  background-color: rgb(3, 26, 26);
+  background: url("../assets/BG1.jpg");
 }
 
 * {
-  color: white;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Chewy", cursive;
 }
 
 .footerContainer {
+  text-align: center;
+}
+
+.mainContainer {
   text-align: center;
 }
 
