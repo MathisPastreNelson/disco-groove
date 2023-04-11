@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/disco-groove/static/css/main.c8873cec.css",
+    "main.css": "/disco-groove/static/css/main.4896daa3.css",
     "main.js": "/disco-groove/static/js/main.cabb5540.js",
     "static/js/787.f3cf35e0.chunk.js": "/disco-groove/static/js/787.f3cf35e0.chunk.js",
     "static/media/BG1.jpg": "/disco-groove/static/media/BG1.7324d30ef2147dba378f.jpg",
     "index.html": "/disco-groove/index.html",
-    "main.c8873cec.css.map": "/disco-groove/static/css/main.c8873cec.css.map",
+    "main.4896daa3.css.map": "/disco-groove/static/css/main.4896daa3.css.map",
     "main.cabb5540.js.map": "/disco-groove/static/js/main.cabb5540.js.map",
     "787.f3cf35e0.chunk.js.map": "/disco-groove/static/js/787.f3cf35e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8873cec.css",
+    "static/css/main.4896daa3.css",
     "static/js/main.cabb5540.js"
   ]
 }
