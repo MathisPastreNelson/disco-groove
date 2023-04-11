@@ -16,13 +16,23 @@ h6 {
 }
 
 .footerContainer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
 }
 
 .mainContainer {
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.425);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .headerContainer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
 }/*# sourceMappingURL=index.css.map */
