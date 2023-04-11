@@ -23,12 +23,13 @@ h6 {
 }
 
 .mainContainer {
-  background-color: rgba(0, 0, 0, 0.425);
+  background-color: rgba(0, 0, 0, 0.774);
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: white;
 }
 
 .headerContainer {
