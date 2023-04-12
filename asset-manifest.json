@@ -1,16 +1,14 @@
 {
   "files": {
     "main.css": "/disco-groove/static/css/main.91adc794.css",
-    "main.js": "/disco-groove/static/js/main.68a96140.js",
-    "static/js/787.f3cf35e0.chunk.js": "/disco-groove/static/js/787.f3cf35e0.chunk.js",
+    "main.js": "/disco-groove/static/js/main.6bf4eab8.js",
     "static/media/BG1.jpg": "/disco-groove/static/media/BG1.7324d30ef2147dba378f.jpg",
     "index.html": "/disco-groove/index.html",
     "main.91adc794.css.map": "/disco-groove/static/css/main.91adc794.css.map",
-    "main.68a96140.js.map": "/disco-groove/static/js/main.68a96140.js.map",
-    "787.f3cf35e0.chunk.js.map": "/disco-groove/static/js/787.f3cf35e0.chunk.js.map"
+    "main.6bf4eab8.js.map": "/disco-groove/static/js/main.6bf4eab8.js.map"
   },
   "entrypoints": [
     "static/css/main.91adc794.css",
-    "static/js/main.68a96140.js"
+    "static/js/main.6bf4eab8.js"
   ]
 }
