@@ -15,29 +15,55 @@ h6 {
   font-family: "Chewy", cursive;
 }
 
+h3 {
+  font-size: 30px;
+}
+
 .footerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
+  background-color: rgba(0, 0, 0, 0.849);
+  color: white;
 }
 
 .mainContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.541);
+  flex-wrap: wrap;
   color: white;
-  padding: 1rem 0 0 0;
+  padding: 0.5rem 0;
 }
 
 .albumBox {
-  margin: 1rem 0;
+  margin: 0.5rem;
+  padding: 1rem 0;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(7, 8, 22, 0.856);
+  border-radius: 20px;
+}
+
+.albumBox--odd {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.albumBox--even > div {
+  margin-right: 1rem;
+}
+
+.albumBox--odd > div {
+  margin-left: 1rem;
+}
+
+.albumBox:hover > .albumImage {
+  transform: scale(1.02);
+  border-radius: 0%;
 }
 
 .albumImage {
@@ -50,11 +76,6 @@ h6 {
   margin: 0 1rem;
 }
 
-.albumImage:hover {
-  transform: scale(1.05);
-  border-radius: 0%;
-}
-
 .albumTitle {
   width: 300px;
   display: flex;
@@ -63,9 +84,63 @@ h6 {
   text-align: center;
 }
 
+.albumAudioPreview {
+  margin: 1rem auto;
+}
+
+audio {
+  background-color: rgba(0, 0, 0, 0.662745098);
+  padding: 0.15rem;
+  border-radius: 30px;
+  transition: 400ms ease-in;
+}
+
+.albumBox:hover > div > audio {
+  background-color: rgba(19, 218, 13, 0.8901960784);
+}
+
+audio::-webkit-media-controls-progress-bar {
+  background-color: #cccccc;
+  height: 10px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #ccc;
+  height: 10px;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: #000;
+  font-size: 14px;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  color: #000;
+  font-size: 14px;
+}
+
+@media screen and (max-device-width: 684px) {
+  .albumBox {
+    flex-direction: column;
+  }
+  .albumTitle {
+    margin: 0.5rem auto;
+  }
+  .albumAudioPreview {
+    margin: 0rem auto;
+  }
+  .albumBox--even > div {
+    margin-right: 0rem;
+  }
+  .albumBox--odd > div {
+    margin-left: 0rem;
+  }
+}
 .headerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
+  background-color: rgba(0, 0, 0, 0.849);
+  color: white;
 }/*# sourceMappingURL=index.css.map */

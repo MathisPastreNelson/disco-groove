@@ -5,14 +5,25 @@ const Artist = () => {
   console.log({ data });
   return (
     <div className="mainContainer">
-      {data.map((item) => (
-        <div className="albumBox" key={item.id}>
+      {data.map((item, index) => (
+        <div
+          className={
+            index % 2 === 0
+              ? "albumBox albumBox--odd"
+              : "albumBox albumBox--even"
+          }
+          key={item.id}>
           <img
             className="albumImage"
             src={item.album && item.album.cover_medium}
             alt={item.title_short}
           />
-          <h3 className="albumTitle">{item.title}</h3>
+          <div className="albumDescribeBox">
+            <h3 className="albumTitle">{item.title}</h3>
+            <audio className="albumAudioPreview" controls>
+              <source src={item.preview} type="audio/mpeg" />
+            </audio>
+          </div>
         </div>
       ))}
     </div>
