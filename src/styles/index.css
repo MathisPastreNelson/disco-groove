@@ -195,7 +195,7 @@ audio::-webkit-media-controls-time-remaining-display {
     width: 250px;
     position: absolute;
     top: 8%;
-    left: 12%;
+    left: 10%;
     opacity: 0;
     transition: 800ms ease-out;
     transform: translateY(0%) rotate(720deg);
@@ -209,7 +209,7 @@ audio::-webkit-media-controls-time-remaining-display {
     width: 250px;
     position: absolute;
     top: 8%;
-    left: 12%;
+    left: 10%;
     opacity: 0;
     transition: 800ms ease-out;
     transform: translateY(0%) rotate(720deg);
