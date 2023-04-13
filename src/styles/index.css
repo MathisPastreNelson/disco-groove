@@ -48,6 +48,7 @@ h3 {
   align-items: center;
   background-color: rgba(7, 8, 22, 0.856);
   border-radius: 20px;
+  transition: all 200ms;
 }
 
 .albumBox--odd {
@@ -63,6 +64,10 @@ h3 {
   margin-left: 1rem;
 }
 
+.albumBox:hover {
+  background-color: rgba(59, 59, 59, 0.842);
+}
+
 .albumBox:hover > .albumImage {
   transform: scale(1.02);
   border-radius: 0%;
@@ -74,7 +79,7 @@ h3 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10%;
-  transition: ease-in-out 400ms;
+  transition: ease-in-out 200ms;
   margin: 0 1rem;
 }
 
