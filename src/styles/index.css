@@ -1,5 +1,6 @@
 body {
   background: url("../assets/BG1.jpg");
+  background-size: contain;
 }
 
 * {
