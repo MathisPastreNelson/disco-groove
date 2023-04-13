@@ -1,6 +1,8 @@
+@charset "UTF-8";
 body {
   background: url("../assets/BG1.jpg");
-  background-size: contain;
+  background-size: cover;
+  z-index: -3;
 }
 
 * {
@@ -29,6 +31,7 @@ h3 {
   color: white;
 }
 
+/*Container global*/
 .mainContainer {
   display: flex;
   justify-content: center;
@@ -40,6 +43,7 @@ h3 {
   margin: 0 auto;
 }
 
+/*Container individuel*/
 .albumBox {
   margin: 0.5rem;
   padding: 1rem 0;
@@ -50,8 +54,10 @@ h3 {
   background-color: rgba(7, 8, 22, 0.856);
   border-radius: 20px;
   transition: all 200ms;
+  z-index: 0;
 }
 
+/*Container Altérnés*/
 .albumBox--odd {
   display: flex;
   flex-direction: row-reverse;
@@ -65,15 +71,21 @@ h3 {
   margin-left: 1rem;
 }
 
+/*HOVER*/
 .albumBox:hover {
   background-color: rgba(59, 59, 59, 0.842);
 }
 
-.albumBox:hover > .albumImage {
+.albumBox:hover > div > .albumImage {
   transform: scale(1.02);
   border-radius: 0%;
 }
 
+.albumBox:hover > div > audio {
+  background-color: rgba(19, 218, 13, 0.8901960784);
+}
+
+/*Contenue des box*/
 .albumImage {
   width: 300px;
   height: 300px;
@@ -103,10 +115,6 @@ audio {
   transition: 400ms ease-in;
 }
 
-.albumBox:hover > div > audio {
-  background-color: rgba(19, 218, 13, 0.8901960784);
-}
-
 audio::-webkit-media-controls-progress-bar {
   background-color: #cccccc;
   height: 10px;
@@ -127,6 +135,45 @@ audio::-webkit-media-controls-time-remaining-display {
   font-size: 14px;
 }
 
+/*Le Vinyl*/
+.albumImageWrapper {
+  position: relative;
+}
+
+.discFillImage {
+  width: 300px;
+  position: absolute;
+  top: 0%;
+  left: -10%;
+  opacity: 0;
+  transform: translateX(20%);
+  transition: 800ms ease-out;
+  z-index: -1;
+  animation: rotate 2s infinite linear;
+}
+
+.albumBox:hover .discFillImage {
+  opacity: 1;
+  transform: translateX(-20%) rotate(-720deg);
+}
+
+.discFillImageReverse {
+  width: 300px;
+  position: absolute;
+  top: 0%;
+  right: -10%;
+  opacity: 0;
+  transform: translateX(-20%);
+  transition: 800ms ease-out;
+  z-index: -1;
+}
+
+.albumBox:hover .discFillImageReverse {
+  opacity: 1;
+  transform: translateX(20%) rotate(720deg);
+}
+
+/*Media queries*/
 @media screen and (max-device-width: 684px) {
   .albumBox {
     flex-direction: column;
@@ -143,7 +190,37 @@ audio::-webkit-media-controls-time-remaining-display {
   .albumBox--odd > div {
     margin-left: 0rem;
   }
+  /*vinyl en MOBILE*/
+  .discFillImage {
+    width: 250px;
+    position: absolute;
+    top: 8%;
+    left: 12%;
+    opacity: 0;
+    transition: 800ms ease-out;
+    transform: translateY(0%) rotate(720deg);
+    z-index: -1;
+  }
+  .albumBox:hover .discFillImage {
+    opacity: 1;
+    transform: translateY(50%);
+  }
+  .discFillImageReverse {
+    width: 250px;
+    position: absolute;
+    top: 8%;
+    left: 12%;
+    opacity: 0;
+    transition: 800ms ease-out;
+    transform: translateY(0%) rotate(720deg);
+    z-index: -1;
+  }
+  .albumBox:hover .discFillImageReverse {
+    opacity: 1;
+    transform: translateY(50%);
+  }
 }
+/*TEST SEQUENCE*/
 .headerContainer {
   display: flex;
   justify-content: center;

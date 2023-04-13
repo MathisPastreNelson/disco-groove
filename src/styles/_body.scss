@@ -1,6 +1,7 @@
 body {
   background: url("../assets/BG1.jpg");
-  background-size: contain;
+  background-size: cover;
+  z-index: -3;
 }
 
 * {
