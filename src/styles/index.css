@@ -18,37 +18,11 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 15vh;
   background-color: rgba(0, 0, 0, 0.849);
   color: white;
   text-align: center;
   width: 100%;
-  z-index: 3;
-}
-
-.buttonScroll {
-  background-color: rgba(0, 0, 0, 0.849);
-  z-index: 3;
-  position: sticky;
-  width: 100%;
-  margin: 0 auto;
-  border: 0px;
-  color: white;
-  padding: 1rem 0;
-  cursor: pointer;
-  transition: 200ms ease-in;
-}
-
-.buttonScroll:hover {
-  background-color: rgba(17, 180, 39, 0.849);
-}
-
-.scrollDownButton {
-  top: 95vh;
-}
-
-.scrollUpButton {
-  top: 0vh;
 }
 
 /*Container global*/
@@ -260,7 +234,7 @@ audio {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 15vh;
   background-color: rgba(0, 0, 0, 0.849);
   color: white;
 }/*# sourceMappingURL=index.css.map */
