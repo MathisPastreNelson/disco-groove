@@ -3,7 +3,18 @@ import { data } from "../assets/data"; // importer une liste de projets
 import vynil from "../assets/vynil.png"; // importer le fichier SVG
 
 const Artist = () => {
+  /*Le clique sur albumbox déclanchera le lecteur*/
+  const handleAlbumClick = (e) => {
+    const audio = e.currentTarget.querySelector(".albumAudioPreview");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  };
+
   console.log({ data });
+
   return (
     <div className="mainContainer">
       {data.map((item, index) => (
@@ -14,7 +25,8 @@ const Artist = () => {
               ? "albumBox albumBox--odd"
               : "albumBox albumBox--even"
           }
-          key={item.id}>
+          key={item.id}
+          onClick={handleAlbumClick}>
           <div className="albumImageWrapper">
             <img
               className="albumImage"
@@ -31,6 +43,13 @@ const Artist = () => {
           </div>
           <div className="albumDescribeBox">
             <h3 className="albumTitle">{item.title}</h3>
+            <p className="albumDuration">
+              Durée :{" "}
+              {new Date(item.duration * 1000)
+                .toISOString()
+                .substr(14, 5)
+                .toLocaleString()}
+            </p>
             <audio className="albumAudioPreview" controls>
               <source src={item.preview} type="audio/mpeg" />
             </audio>

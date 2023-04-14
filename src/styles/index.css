@@ -7,15 +7,7 @@ body {
 
 * {
   margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Chewy", cursive;
+  font-family: "Sedgwick Ave Display", cursive;
 }
 
 h3 {
@@ -51,10 +43,11 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(7, 8, 22, 0.856);
-  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.842);
+  border-radius: 2px;
   transition: all 200ms;
   z-index: 0;
+  cursor: pointer;
 }
 
 /*Container Altérnés*/
@@ -73,16 +66,24 @@ h3 {
 
 /*HOVER*/
 .albumBox:hover {
-  background-color: rgba(59, 59, 59, 0.842);
+  background-color: rgba(82, 82, 82, 0.822);
 }
 
 .albumBox:hover > div > .albumImage {
   transform: scale(1.02);
-  border-radius: 0%;
+  border-radius: 2px;
+}
+
+.albumBox:hover > div > .albumTitle {
+  color: rgba(124, 255, 119, 0.8901960784);
+}
+
+.albumBox:hover > div > .albumDuration {
+  color: rgba(124, 255, 119, 0.8901960784);
 }
 
 .albumBox:hover > div > audio {
-  background-color: rgba(19, 218, 13, 0.8901960784);
+  background-color: rgba(108, 245, 103, 0.9529411765);
 }
 
 /*Contenue des box*/
@@ -91,7 +92,7 @@ h3 {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10%;
+  border-radius: 10px;
   transition: ease-in-out 200ms;
   margin: 0 1rem;
 }
@@ -102,6 +103,11 @@ h3 {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.albumDuration {
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 .albumAudioPreview {
@@ -115,29 +121,10 @@ audio {
   transition: 400ms ease-in;
 }
 
-audio::-webkit-media-controls-progress-bar {
-  background-color: #cccccc;
-  height: 10px;
-}
-
-audio::-webkit-media-controls-volume-slider {
-  background-color: #ccc;
-  height: 10px;
-}
-
-audio::-webkit-media-controls-current-time-display {
-  color: #000;
-  font-size: 14px;
-}
-
-audio::-webkit-media-controls-time-remaining-display {
-  color: #000;
-  font-size: 14px;
-}
-
 /*Le Vinyl*/
 .albumImageWrapper {
   position: relative;
+  height: 300px;
 }
 
 .discFillImage {
@@ -177,6 +164,18 @@ audio::-webkit-media-controls-time-remaining-display {
 @media screen and (max-device-width: 684px) {
   .albumBox {
     flex-direction: column;
+    width: 340px;
+    margin: 0.5rem;
+  }
+  .albumImageWrapper {
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .albumImage {
+    margin: 0 auto;
   }
   .albumTitle {
     margin: 0.5rem auto;
@@ -190,12 +189,20 @@ audio::-webkit-media-controls-time-remaining-display {
   .albumBox--odd > div {
     margin-left: 0rem;
   }
+  .albumTitle {
+    margin: 0;
+  }
+  .albumDuration {
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+  }
   /*vinyl en MOBILE*/
   .discFillImage {
     width: 250px;
     position: absolute;
     top: 8%;
-    left: 10%;
+    left: 13%;
     opacity: 0;
     transition: 800ms ease-out;
     transform: translateY(0%) rotate(720deg);
@@ -209,7 +216,7 @@ audio::-webkit-media-controls-time-remaining-display {
     width: 250px;
     position: absolute;
     top: 8%;
-    left: 10%;
+    left: 13%;
     opacity: 0;
     transition: 800ms ease-out;
     transform: translateY(0%) rotate(720deg);
@@ -228,4 +235,5 @@ audio::-webkit-media-controls-time-remaining-display {
   height: 10vh;
   background-color: rgba(0, 0, 0, 0.849);
   color: white;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
