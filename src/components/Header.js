@@ -1,9 +1,11 @@
 import React from "react";
+import logo from "../assets/logo.webp"; // importer le fichier SVGpx
 
 const Header = () => {
   return (
     <header className="headerContainer">
-      <h1>Projet en cours de construction</h1>
+      <img className="headerLogo" src={logo} alt="" srcset="" />
+      <h1 className="headerTitle">Disco Groove</h1>
     </header>
   );
 };

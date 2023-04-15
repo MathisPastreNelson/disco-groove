@@ -1,10 +1,20 @@
 .headerContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 15vh;
   background-color: rgba(0, 0, 0, 0.849);
   color: white;
   text-align: center;
   width: 100%;
+}
+
+.headerLogo {
+  width: 10vh;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+
+.headerTitle {
+  padding: 0.5rem;
 }
