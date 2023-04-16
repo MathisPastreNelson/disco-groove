@@ -1,9 +1,9 @@
 import React from "react";
 
-import { freezeData } from "../assets/freezeData"; // importer une liste de projets
+import { hugoTSRData } from "../assets/hugoTSRData"; // importer une liste de projets
 import vynil from "../assets/vynil.png"; // importer le fichier SVG
 
-const Artist = () => {
+const Artist4 = () => {
   /*Le clique sur albumbox déclanchera le lecteur*/
   const handleAlbumClick = (e) => {
     const audio = e.currentTarget.querySelector(".albumAudioPreview");
@@ -14,11 +14,9 @@ const Artist = () => {
     }
   };
 
-  console.log({ freezeData });
-
   return (
     <div className="mainContainer">
-      {freezeData.map((item, index) => (
+      {hugoTSRData.map((item, index) => (
         <div
           // Alternance de classe 1 fois sur 2
           className={
@@ -61,4 +59,4 @@ const Artist = () => {
   );
 };
 
-export default Artist;
+export default Artist4;

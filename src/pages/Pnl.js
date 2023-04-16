@@ -1,17 +1,19 @@
 import React from "react";
 
 import Header from "../components/Header";
-import HomeChoose from "../components/HomeChoose";
+import ReturnHomeBar from "../components/ReturnHomeBar";
+import Artist3 from "../components/Artist3";
 import Footer from "../components/Footer";
 
-const Home = () => {
+const Pnl = () => {
   return (
     <div>
       <Header />
-      <HomeChoose />
+      <ReturnHomeBar />
+      <Artist3 />
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Pnl;

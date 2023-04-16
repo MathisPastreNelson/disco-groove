@@ -1,17 +1,19 @@
 import React from "react";
 
 import Header from "../components/Header";
-import HomeChoose from "../components/HomeChoose";
+import ReturnHomeBar from "../components/ReturnHomeBar";
+import Artist5 from "../components/Artist5";
 import Footer from "../components/Footer";
 
-const Home = () => {
+const Sadek = () => {
   return (
     <div>
       <Header />
-      <HomeChoose />
+      <ReturnHomeBar />
+      <Artist5 />
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Sadek;

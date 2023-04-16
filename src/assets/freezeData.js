@@ -1,4 +1,4 @@
-export const data = [
+export const freezeData = [
   {
     id: 1056401412,
     readable: true,

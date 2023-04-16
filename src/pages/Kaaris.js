@@ -1,17 +1,19 @@
 import React from "react";
 
 import Header from "../components/Header";
-import HomeChoose from "../components/HomeChoose";
+import ReturnHomeBar from "../components/ReturnHomeBar";
+import Artist1 from "../components/Artist1";
 import Footer from "../components/Footer";
 
-const Home = () => {
+const Freeze = () => {
   return (
     <div>
       <Header />
-      <HomeChoose />
+      <ReturnHomeBar />
+      <Artist1 />
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Freeze;
