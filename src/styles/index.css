@@ -14,6 +14,34 @@ h3 {
   font-size: 30px;
 }
 
+/* text animations */
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+/* Animation d'artistes */
+/**
+ * ----------------------------------------
+ * animation tilt-in-top-2
+ * ----------------------------------------
+ */
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
 .headerContainer {
   display: flex;
   justify-content: space-around;
@@ -53,6 +81,7 @@ h3 {
   border-radius: 5px;
   transition: 400ms ease-out;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .navLink_ArtistLinks:hover {
@@ -66,11 +95,13 @@ h3 {
 .imgArtist {
   width: 300px;
   border-radius: 5px;
+  animation: tilt-in-top-2 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .txtArtist {
   text-align: center;
   padding-top: 1rem;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /*Retour à l'index*/
@@ -183,6 +214,7 @@ h3 {
   border-radius: 10px;
   transition: ease-in-out 200ms;
   margin: 0 1rem;
+  animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .albumTitle {
@@ -191,11 +223,13 @@ h3 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .albumDuration {
   text-align: center;
   margin-top: 0.5rem;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .albumAudioPreview {
@@ -207,6 +241,7 @@ audio {
   padding: 0.15rem;
   border-radius: 30px;
   transition: 400ms ease-in;
+  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /*Le Vinyl*/
