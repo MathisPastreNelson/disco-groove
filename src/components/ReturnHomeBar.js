@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import arrowreturnleft from "../assets/arrow-return-left.svg"; // importer le fichier SVG
+import arrowreturnleft from "../assets/arrow-return-left.png"; // importer le fichier SVG
 
 export default function ReturnHomeBar() {
   return (

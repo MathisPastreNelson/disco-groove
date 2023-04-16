@@ -5,7 +5,60 @@ const HomeChoose = () => {
   return (
     <div>
       <nav className="selectArtist">
-        <NavLink className="navLink_ArtistLinks" to="./artist">
+        <NavLink className="navLink_ArtistLinks" to="./artist6">
+          <img
+            className="imgArtist"
+            alt=""
+            src="https://e-cdns-images.dzcdn.net/images/artist/cb4efb957e6042d018bb6f44c4402fb3/500x500-000000-80-0-0.jpg"
+          />
+          <h2 className="txtArtist">Charle Aznavour</h2>
+        </NavLink>
+
+        <NavLink className="navLink_ArtistLinks" to="./artist7">
+          <img
+            className="imgArtist"
+            alt=""
+            src="https://e-cdns-images.dzcdn.net/images/artist/c1d1e7f0defadb4566e59e8f19fcd45e/500x500-000000-80-0-0.jpg"
+          />
+          <h2 className="txtArtist">Georges Brassens</h2>
+        </NavLink>
+
+        <NavLink className="navLink_ArtistLinks" to="./artist8">
+          <img
+            className="imgArtist"
+            alt=""
+            src="https://e-cdns-images.dzcdn.net/images/artist/3369b8c95a537fc09dbff822ff1bfd0e/500x500-000000-80-0-0.jpg"
+          />
+          <h2 className="txtArtist">Jacques Brel</h2>
+        </NavLink>
+
+        <NavLink className="navLink_ArtistLinks" to="./artist9">
+          <img
+            className="imgArtist"
+            alt=""
+            src="https://e-cdns-images.dzcdn.net/images/artist/7fb8883264e8b6f598a55e3d88aacc04/500x500-000000-80-0-0.jpg"
+          />
+          <h2 className="txtArtist">Renaud</h2>
+        </NavLink>
+
+        <NavLink className="navLink_ArtistLinks" to="./artist10">
+          <img
+            className="imgArtist"
+            alt=""
+            src="https://e-cdns-images.dzcdn.net/images/artist/40e6ae825b053b13a20c60f13f2109d4/500x500-000000-80-0-0.jpg"
+          />
+          <h2 className="txtArtist">Serge Gainsbourg</h2>
+        </NavLink>
+
+        <NavLink className="navLink_ArtistLinks" to="./artist11">
+          <img
+            className="imgArtist"
+            alt=""
+            src="https://e-cdns-images.dzcdn.net/images/artist/319fd1a5c8f400ea5f928b89605e6c1b/500x500-000000-80-0-0.jpg"
+          />
+          <h2 className="txtArtist">Les Rita Mitsouko</h2>
+        </NavLink>
+        <NavLink className="navLink_ArtistLinks" to="./artist12">
           <img
             className="imgArtist"
             alt=""
