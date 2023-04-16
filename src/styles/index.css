@@ -188,7 +188,7 @@ h3 {
   background-color: rgba(82, 82, 82, 0.822);
 }
 
-.albumBox:hover > div > .albumImage {
+.albumBox:hover > .albumImageWrapper > .albumImage {
   transform: scale(1.02);
   border-radius: 2px;
 }
@@ -214,7 +214,6 @@ h3 {
   border-radius: 10px;
   transition: ease-in-out 200ms;
   margin: 0 1rem;
-  animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .albumTitle {
