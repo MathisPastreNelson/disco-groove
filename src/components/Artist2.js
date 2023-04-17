@@ -15,7 +15,7 @@ const Artist2 = () => {
   };
 
   return (
-    <div className="mainContainer">
+    <div className="mainContainer rapFont">
       {kalashKriminelData.map((item, index) => (
         <div
           // Alternance de classe 1 fois sur 2

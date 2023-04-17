@@ -17,7 +17,7 @@ const Artist = () => {
   console.log({ freezeData });
 
   return (
-    <div className="mainContainer">
+    <div className="mainContainer rapFont">
       {freezeData.map((item, index) => (
         <div
           // Alternance de classe 1 fois sur 2

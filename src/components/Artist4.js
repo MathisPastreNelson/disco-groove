@@ -15,7 +15,7 @@ const Artist4 = () => {
   };
 
   return (
-    <div className="mainContainer">
+    <div className="mainContainer rapFont">
       {hugoTSRData.map((item, index) => (
         <div
           // Alternance de classe 1 fois sur 2

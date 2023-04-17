@@ -15,7 +15,7 @@ const Artist5 = () => {
   };
 
   return (
-    <div className="mainContainer">
+    <div className="mainContainer rapFont">
       {sadekData.map((item, index) => (
         <div
           // Alternance de classe 1 fois sur 2

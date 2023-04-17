@@ -15,7 +15,7 @@ const Artist10 = () => {
   };
 
   return (
-    <div className="mainContainer">
+    <div className="mainContainer classicFont">
       {gainsbourgData.map((item, index) => (
         <div
           // Alternance de classe 1 fois sur 2

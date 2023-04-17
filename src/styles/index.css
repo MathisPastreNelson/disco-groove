@@ -1,17 +1,23 @@
 @charset "UTF-8";
 body {
-  background: url("../assets/BG1.jpg");
+  background: url("../assets/BG2.jpg");
   background-size: cover;
-  z-index: -3;
 }
 
 * {
   margin: 0;
-  font-family: "Sedgwick Ave Display", cursive;
 }
 
 h3 {
   font-size: 30px;
+}
+
+.classicFont {
+  font-family: "Tilt Prism", cursive;
+}
+
+.rapFont {
+  font-family: "Sedgwick Ave Display", cursive;
 }
 
 /* text animations */
@@ -48,7 +54,8 @@ h3 {
   align-items: center;
   height: 15vh;
   background-color: rgba(0, 0, 0, 0.849);
-  color: white;
+  font-family: "Bungee Shade", cursive;
+  color: rgb(240, 26, 204);
   text-align: center;
   width: 100%;
 }
@@ -63,6 +70,11 @@ h3 {
   padding: 0.5rem;
 }
 
+@media screen and (max-device-width: 420px) {
+  .headerTitle {
+    font-size: 22px;
+  }
+}
 /*Index*/
 .selectArtist {
   margin: 0 auto;
@@ -112,6 +124,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: "Tilt Prism", cursive;
 }
 
 .navLinkBar:hover > * {
@@ -356,5 +369,6 @@ audio {
   align-items: center;
   height: 15vh;
   background-color: rgba(0, 0, 0, 0.849);
-  color: white;
+  font-family: "Bungee Shade", cursive;
+  color: rgb(240, 26, 204);
 }/*# sourceMappingURL=index.css.map */

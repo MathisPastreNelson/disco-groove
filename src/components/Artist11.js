@@ -15,7 +15,7 @@ const Artist11 = () => {
   };
 
   return (
-    <div className="mainContainer">
+    <div className="mainContainer classicFont">
       {mitsoukoData.map((item, index) => (
         <div
           // Alternance de classe 1 fois sur 2
