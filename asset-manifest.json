@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/disco-groove/static/css/main.ae4b685e.css",
-    "main.js": "/disco-groove/static/js/main.314f1d89.js",
+    "main.css": "/disco-groove/static/css/main.532e1cf5.css",
+    "main.js": "/disco-groove/static/js/main.c4add3c0.js",
+    "static/media/BG3.jpg": "/disco-groove/static/media/BG3.a3dd8d831a85be0bf264.jpg",
     "static/media/vynil.png": "/disco-groove/static/media/vynil.6aa0e3d5307231d57723.png",
     "static/media/arrow-return-left.png": "/disco-groove/static/media/arrow-return-left.2ba2777200aabf5c1650.png",
+    "static/media/BG1.jpg": "/disco-groove/static/media/BG1.a9bbd53d6f4a7a64ee71.jpg",
     "static/media/BG2.jpg": "/disco-groove/static/media/BG2.ecd8cdc793e1454b75fd.jpg",
     "static/media/logo.webp": "/disco-groove/static/media/logo.2ce09c049b189fe3adf2.webp",
     "index.html": "/disco-groove/index.html",
-    "main.ae4b685e.css.map": "/disco-groove/static/css/main.ae4b685e.css.map",
-    "main.314f1d89.js.map": "/disco-groove/static/js/main.314f1d89.js.map"
+    "main.532e1cf5.css.map": "/disco-groove/static/css/main.532e1cf5.css.map",
+    "main.c4add3c0.js.map": "/disco-groove/static/js/main.c4add3c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae4b685e.css",
-    "static/js/main.314f1d89.js"
+    "static/css/main.532e1cf5.css",
+    "static/js/main.c4add3c0.js"
   ]
 }
