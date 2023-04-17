@@ -1,5 +1,6 @@
 body {
   background: url("../assets/BG2.jpg");
+  backdrop-filter: blur(10px);
   background-size: cover;
 }
 
@@ -9,6 +10,16 @@ body {
 
 h3 {
   font-size: 30px;
+}
+
+.classicBg {
+  background: url("../assets/BG1.jpg");
+  background-size: cover;
+}
+
+.rapBg {
+  background: url("../assets/BG3.jpg");
+  background-size: cover;
 }
 
 .classicFont {
