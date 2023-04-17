@@ -1,8 +1,6 @@
 @charset "UTF-8";
 body {
   background: url("../assets/BG2.jpg");
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   background-size: cover;
 }
 
@@ -15,13 +13,15 @@ h3 {
 }
 
 .classicBg {
-  background: url("../assets/BG1.jpg");
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(250, 230, 52, 0.589) 0.2%, rgba(245, 232, 119, 0.589) 50%, rgba(250, 230, 52, 0.589) 99.8%, rgb(0, 0, 0) 100%), url("../assets/BG1.jpg");
   background-size: cover;
+  background-position: 50% 60%;
 }
 
 .rapBg {
-  background: url("../assets/BG3.jpg");
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(88, 52, 250, 0.589) 0.2%, rgba(142, 119, 245, 0.589) 50%, rgba(142, 119, 245, 0.589) 99.8%, rgb(0, 0, 0) 100%), url("../assets/BG3.jpg");
   background-size: cover;
+  background-position: 50% 30%;
 }
 
 .classicFont {
@@ -65,7 +65,7 @@ h3 {
   justify-content: space-around;
   align-items: center;
   height: 15vh;
-  background-color: rgba(0, 0, 0, 0.849);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.747) 100%);
   font-family: "Bungee Shade", cursive;
   color: rgb(240, 26, 204);
   text-align: center;
@@ -75,7 +75,8 @@ h3 {
 .headerLogo {
   width: 10vh;
   border-radius: 20px;
-  padding: 0.5rem;
+  border: 3px solid rgb(240, 26, 204);
+  margin: 0 0.5rem;
 }
 
 .headerTitle {
@@ -93,9 +94,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, 0.849);
   min-height: 68vh;
-  margin: 1vh 0;
 }
 
 .buttonMaxSize {
@@ -109,8 +108,7 @@ h3 {
 
 .buttonCollapse {
   width: 100%;
-  height: 20vh;
-  margin: 0.5rem auto;
+  height: 35vh;
   font-size: 40px;
   cursor: pointer;
   transition: 400ms ease-out;
@@ -179,7 +177,7 @@ h3 {
 /*Retour à l'index*/
 .navLinkBar {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.849);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.836) 100%);
   padding: 1rem 0;
   display: flex;
   justify-content: space-around;
@@ -428,7 +426,7 @@ audio {
   justify-content: center;
   align-items: center;
   height: 15vh;
-  background-color: rgba(0, 0, 0, 0.849);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0.747) 100%);
   font-family: "Bungee Shade", cursive;
   color: rgb(240, 26, 204);
 }/*# sourceMappingURL=index.css.map */

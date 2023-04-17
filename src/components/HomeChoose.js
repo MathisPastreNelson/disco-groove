@@ -18,12 +18,7 @@ const HomeChoose = () => {
     <div>
       <nav className="buttonBox">
         {/* COLLAPSE 1 */}
-        <button
-          className="buttonCollapse classicBg classicFont"
-          {...getToggleProps1()}>
-          <p className="textButtons">{isExpanded1 ? "Fermer" : "Old School"}</p>
-        </button>
-        <section className="selectArtist classicBg " {...getCollapseProps1()}>
+        <section className="selectArtist classicBg" {...getCollapseProps1()}>
           <div className="buttonMaxSize">
             <NavLink className="navLink_ArtistLinks" to="./artist6">
               <img
@@ -80,6 +75,11 @@ const HomeChoose = () => {
             </NavLink>
           </div>
         </section>
+        <button
+          className="buttonCollapse classicBg classicFont"
+          {...getToggleProps1()}>
+          <p className="textButtons">{isExpanded1 ? "Fermer" : "Old School"}</p>
+        </button>
 
         {/* COLLAPSE 2 */}
         <button className="buttonCollapse rapBg rapFont" {...getToggleProps2()}>

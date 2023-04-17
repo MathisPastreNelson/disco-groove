@@ -1,6 +1,5 @@
 body {
   background: url("../assets/BG2.jpg");
-  backdrop-filter: blur(10px);
   background-size: cover;
 }
 
@@ -13,14 +12,40 @@ h3 {
 }
 
 .classicBg {
-  background: url("../assets/BG1.jpg");
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(250, 230, 52, 0.589) 0.2%,
+      rgba(245, 232, 119, 0.589) 50%,
+      rgba(250, 230, 52, 0.589) 99.8%,
+      rgb(0, 0, 0) 100%
+    ),
+    url("../assets/BG1.jpg");
+
   background-size: cover;
+  background-position: 50% 60%;
 }
 
 .rapBg {
-  background: url("../assets/BG3.jpg");
+  background: linear-gradient(
+      0deg,
+      rgb(0, 0, 0) 0%,
+      rgba(88, 52, 250, 0.589) 0.2%,
+      rgba(142, 119, 245, 0.589) 50%,
+      rgba(142, 119, 245, 0.589) 99.8%,
+      rgb(0, 0, 0) 100%
+    ),
+    url("../assets/BG3.jpg");
   background-size: cover;
+  background-position: 50% 30%;
 }
+
+// .classicBg1 {
+//   background: linear-gradient(
+//     rgba(49, 44, 1, 0.877),
+//     rgba(255, 237, 72, 0.274)
+//   );
+// }
 
 .classicFont {
   font-family: "Tilt Prism", cursive;

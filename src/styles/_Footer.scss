@@ -3,7 +3,11 @@
   justify-content: center;
   align-items: center;
   height: 15vh;
-  background-color: rgba(0, 0, 0, 0.849);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 30%,
+    rgba(0, 0, 0, 0.747) 100%
+  );
   font-family: "Bungee Shade", cursive;
   color: rgb(240, 26, 204);
 }

@@ -4,9 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, 0.849);
+
   min-height: 68vh;
-  margin: 1vh 0;
 }
 
 .buttonMaxSize {
@@ -20,8 +19,7 @@
 
 .buttonCollapse {
   width: 100%;
-  height: 20vh;
-  margin: 0.5rem auto;
+  height: 35vh;
   font-size: 40px;
   cursor: pointer;
   transition: 400ms ease-out;
@@ -93,7 +91,11 @@
 /*Retour à l'index*/
 .navLinkBar {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.849);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 30%,
+    rgba(0, 0, 0, 0.836) 100%
+  );
   padding: 1rem 0;
   display: flex;
   justify-content: space-around;
