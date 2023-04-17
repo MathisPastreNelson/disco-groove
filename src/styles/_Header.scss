@@ -9,7 +9,6 @@
     rgba(0, 0, 0, 0.747) 100%
   );
   font-family: "Bungee Shade", cursive;
-  color: rgb(240, 26, 204);
   text-align: center;
   width: 100%;
 }
@@ -23,10 +22,30 @@
 
 .headerTitle {
   padding: 0.5rem;
+  font-size: 40px;
+  line-height: 35px;
 }
 
-@media screen and (max-device-width: 420px) {
+h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title1 {
+  color: rgba(104, 104, 253, 0.596);
+}
+
+.title2 {
+  color: rgba(255, 255, 255, 0.63);
+}
+
+.title3 {
+  color: rgba(255, 40, 40, 0.664);
+}
+
+@media screen and (max-device-width: 570px) {
   .headerTitle {
-    font-size: 22px;
+    font-size: 35px;
   }
 }

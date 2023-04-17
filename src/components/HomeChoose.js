@@ -78,12 +78,16 @@ const HomeChoose = () => {
         <button
           className="buttonCollapse classicBg classicFont"
           {...getToggleProps1()}>
-          <p className="textButtons">{isExpanded1 ? "Fermer" : "Old School"}</p>
+          <p className="textButtons">
+            {isExpanded1 ? "Fermer" : "Nous rayonnâmes"}
+          </p>
         </button>
 
         {/* COLLAPSE 2 */}
         <button className="buttonCollapse rapBg rapFont" {...getToggleProps2()}>
-          <p className="textButtons">{isExpanded2 ? "Fermer" : "New School"}</p>
+          <p className="textButtons">
+            {isExpanded2 ? "Fermer" : "Nous rayonnons"}
+          </p>
         </button>
         <section className="selectArtist rapBg" {...getCollapseProps2()}>
           <div className="buttonMaxSize">
